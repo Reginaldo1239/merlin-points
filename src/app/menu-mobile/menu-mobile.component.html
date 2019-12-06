@@ -1,0 +1,35 @@
+<div class="menu-mobile" *ngIf="visivel" >
+
+    <div class="fechar-pesquisar">
+        <div class="flex">
+            <div class="ico-fechar">
+                    <fa-icon   (click)="fecharMenu()" [icon] ="faTimes"> </fa-icon >
+                </div>
+                <div class="search relative">
+                    <div class="lupa">
+                            <fa-icon  [icon] ="faSearch"> </fa-icon >
+                        </div>
+                        <input type="text" placeholder="Search or stock">
+                        
+                </div>
+        </div>
+    </div>
+
+
+
+    <nav>
+        <ul>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >aPotions</a></li>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Ingredients</a></li>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Books</a></li>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Supplies</a></li>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Charms</a></li>
+            <li><a [routerLink]="['/routePath']" routerLinkActive="router-link-active" >Clearance!</a></li>
+            </ul>
+    </nav>  
+    <div class="box-texto">
+            <div class="linha-texto"><span>Sign In</span></div>
+            <div class="linha-texto"><span>or</span></div>
+            <div class="linha-texto"><span>Sign Up</span></div>
+        </div> 
+</div>

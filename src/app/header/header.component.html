@@ -1,0 +1,60 @@
+<header class="desktop">
+        <div class="flex center">
+                <div class="container">
+                       <div class="logo">
+                           <h2> <span>Merlin</span>  Potions</h2>
+                         <div class="relative">  <p>fine potions since 1026</p>
+                             <div class="linha-left-absolute"></div>
+                             <div class="linha-rigth-absolute"></div>  </div>
+                       </div><!---logo-->
+
+                </div>
+                <div class="container">
+                        <div class="pesquisa relative">
+                            <input type="text" placeholder="Search our stock">
+                            <div class="lupa">
+                                    <fa-icon [icon]="faSearch"></fa-icon>
+                            </div><!--lupa--->
+                        </div><!--pesquisa--->
+                        
+                    </div>
+                    <div class="container">
+                            <p>Free Shipping</p>
+                            <p>on orders over $50</p><span>  </span>
+                          
+                        </div>
+                        <div class="container">
+                               <fa-icon [icon]="faShoppingCart" ></fa-icon>  
+                         <p>Bag :<span> 1</span> </p>
+                            </div>
+            </div>
+</header>
+
+
+
+
+
+<header class="mobile">
+        <app-menu-mobile  [visivel]="abrirMenu"  (fechar)="abrir($event)"></app-menu-mobile>
+        <div class="flex center">
+                <div class="container">
+                      <fa-icon  (click)="abrir()" [icon] ="faBars"  > </fa-icon >
+                      
+
+                </div>
+                <div class="container">
+                        <div class="logo">
+                                <h2> <span>Merlin</span>  Potions</h2>
+                                <div class="relative">  <p>fine potions since 1026</p>
+                                    <div class="linha-left-absolute"></div>
+                                    <div class="linha-rigth-absolute"></div>  </div>
+                            </div><!---logo-->
+                        
+                    </div>
+                  
+                        <div class="container">
+                                <fa-icon [icon]="faShoppingCart" ></fa-icon>  
+                                <p>Bag :<span> 1</span> </p>
+                            </div>
+            </div>
+</header>

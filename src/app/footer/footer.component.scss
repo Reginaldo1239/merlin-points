@@ -1,0 +1,101 @@
+footer{
+    padding: 20px;
+    .center{
+        width: 60%;
+    }
+    .ico-rede-social{
+        width: 20%;
+        padding: 40px 0;
+     
+    }
+
+    background-color:#ccc;
+    .container{
+        width: 50%;
+
+        .box-texto{
+            width: 90%;
+
+            li{
+                float: left;
+                padding: 5px;
+                width: 33%;
+                list-style-type: none;
+                a{
+                    font-size: 25px;
+                    text-decoration: none;
+                    color:#FF6347;
+                }
+            }
+        }
+      
+        .form{
+            background: white;
+            padding: 30px;
+            border-radius: 5px;
+            p{
+                font-size: 20px;
+                padding: 5px 0;
+            }
+            input[type=text]{
+                width: 70%;
+                min-height: 40px;
+                margin: 0 5px;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-left: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                border-radius: 5px;
+                padding-left: 5px;
+            }
+            button{
+                width: 20%;
+                min-height: 40px;
+                background-color: orange;
+                border:1px solid orange;
+                border-radius: 8px;
+                color:white;
+                cursor: pointer;
+            }
+            button:hover{
+                opacity: 0.7;
+                color:black;
+            }
+        }
+    }
+
+}
+@media(max-width:900px){
+    footer{
+        .box-texto:nth-of-type(1){
+            ul{
+                display: none;
+            }
+        }
+        .box-texto{
+            padding: 5px 0;
+        }
+        form{
+            padding:10px 0 ;
+        }
+        .center{
+            width: 100%;
+        }
+        .container{
+            width: 100%;
+        }
+
+        .order1{
+            order:2;
+        }
+        .order2{
+            order:1;
+        }
+        .order3{
+            order:3;
+            text-align: center;
+        }
+        
+     
+    }    
+}

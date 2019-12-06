@@ -1,0 +1,36 @@
+
+section.box-lista-produtos{
+text-align: initial;
+.center{
+    max-width: 70%;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+app-box-produto{
+    width: 33%;
+    padding: 0px;
+   
+}
+}
+@media (max-width: 900px) {
+
+    section.box-lista-produtos{
+        .center{
+            max-width: 100%;
+        
+        }
+        app-box-produto{
+            width: 50%;
+            margin: 20px 0;
+           
+        }
+        .titulo{
+            text-align: center;
+            h2{
+             font-size:25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+<section class="box-lista-produtos" >
+                <div  *ngFor="let produto of produtosArray"> 
+                <app-detalhe-do-produto (acaoDeClick)="produDetalheFechar($vent)" *ngIf="produto.id ==produtoDetalheId && produtoDetalheVisivel"
+                [nome]="produto.name"
+                [id]="produto.id"
+                [imagem]="produto.image"
+                [price]="produto.price"
+                [effect]="produto.effect"
+                
+                ></app-detalhe-do-produto>
+             
+        </div>  
+   <div class="center"> 
+           
+    <div class="titulo">
+            <h2>Potions</h2>
+    </div>
+            <div class="flex">
+                <app-box-produto  *ngFor="let produto of produtosArray"
+                 [nome]="produto.name"
+                 [imagem]="produto.image"
+                 [price]="produto.price"
+                 (click)="produtoDetalhe(produto.id)"
+                 ></app-box-produto>
+              
+                </div><!--flex--->
+               
+      </div>  
+     
+  
+</section>

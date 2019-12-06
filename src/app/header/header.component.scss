@@ -1,0 +1,155 @@
+
+.container{
+    width: 25%;
+}
+header.mobile{
+    display: none;}
+header{
+    padding:  20px 0;
+    text-align: center;
+    .logo{
+        p{
+            color:purple;
+            font-size: 20px;
+        }
+    }
+    
+    h2{
+        font-size: 50px;
+            color:#FF8C00;
+            font-weight: 100;
+        span{
+            color:#FF6347;
+        }
+ 
+    }
+
+    .linha-left-absolute{
+        position: absolute;
+        width: 40%;
+        min-height: 1px;
+        background: purple;
+        left: -45%;
+        top:10px;
+    }
+    .linha-rigth-absolute{
+        position: absolute;
+        width: 40%;
+        min-height: 1px;
+        background: purple;
+        right: -45%;
+        top:10px;
+    
+    }
+    .container:nth-of-type(3){
+    p{
+        text-align: right;
+        color:#FF8C00;
+        font-size: 20px;
+    }
+}
+
+    .container:nth-of-type(4){
+        padding: 0px 50px;
+       p{    text-align: left;
+            font-size: 20px;
+            span{
+                color:orange;
+            }
+      
+    }
+    fa-icon{
+        font-size: 25px;
+        float: left;
+        padding: 0 10px ;
+        color:purple;
+    }
+    }
+    .pesquisa {
+        width: 100%;
+        fa-icon{
+            font-size: 25px;
+        }
+        .lupa{
+            position: absolute;
+            left: 10px;
+            top:14px;
+            cursor: pointer;
+         
+        }
+    input {
+        width: 100%;
+        padding: 15px;
+        border-radius: 5px;
+        border:1px solid #ccc;
+        padding-left:40px ;
+        font-size: 20px;
+    }
+
+    }
+}
+
+@media (max-width: 900px) {
+    header.desktop{
+        display: none;
+    }
+    header.mobile{
+        display: block;
+        padding: 0;
+        text-align: initial;
+        fa-icon {
+            font-size: 60px;
+            color:purple;
+            cursor: pointer;
+          
+        }
+        h2{
+            font-size: 50px;
+            
+                color:#FF8C00;
+                font-weight: 100;
+            span{
+                color:#FF6347;
+            }
+         
+        }
+        .container:nth-of-type(1){
+            width: 15%;
+            padding: 3px 10px;
+           
+           
+        }
+        .container:nth-of-type(2){
+            width: 70%;
+            padding: 3px 10px;
+            text-align: center;
+           
+           
+        }
+        .container:nth-of-type(3){
+            width: 15%;
+            padding: 20px;
+            text-align: center;
+            p{
+                font-size: 15px;
+
+            }
+            fa-icon{
+                font-size:40px;
+                float: left;
+                padding: 3px 1px ;
+                color:purple;
+
+            }
+           
+        }
+      
+        .center{
+            min-width:  100%;
+           
+        }
+    
+    
+     
+    }
+}

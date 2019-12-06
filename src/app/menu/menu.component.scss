@@ -1,0 +1,57 @@
+section.menu{
+    background-color: #993399;
+    .container:nth-of-type(1){
+        width:70%;
+     
+    }
+    div{font-size: 20px;
+    font-style: italic;
+    }
+    li{
+        float: left;
+        padding: 20px 40px;
+        list-style-type: none;
+        font-size: 20px;
+        color:white;
+        cursor: pointer;
+        font-style: italic;
+    }
+    .login{
+       
+        padding: 20px 0;
+     
+    }
+    .container-texto{
+      
+        padding:  0 20px;
+     a{   color:white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    }
+    .lista-ico-absolute{
+        position: absolute;
+        right: 15%;
+        bottom:30%;
+        display: inline-block;
+   
+    fa-icon{
+        color:white
+    }
+
+
+
+}
+
+.center{
+    max-width: 80%;
+}
+}
+
+@media (max-width: 900px) {
+    section.menu{
+        display: none;
+    }
+
+
+}

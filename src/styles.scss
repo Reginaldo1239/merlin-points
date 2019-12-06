@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.center{
+    max-width: 90%;
+    margin: 0 auto;
+    
+}
+.relative{
+    position: relative;
+    display: inline-block;
+}
+$cor-text:#FF6347 !default;
+@media (max-width: 900px) {
+
+    .center{
+        width: 100%;
+    }
+
+}

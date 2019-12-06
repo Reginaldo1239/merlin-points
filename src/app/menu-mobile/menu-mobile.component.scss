@@ -1,0 +1,67 @@
+
+
+.menu-mobile{
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    background-color: mediumpurple;
+    z-index: 999;
+
+
+    .fechar-pesquisar{
+        background-color: white;
+        padding:10px;
+        .ico-fechar{
+            width: 10%;
+            text-align: right;
+            padding-right:20px ;
+            fa-icon{
+               font-size: 40px;
+               cursor: pointer;
+              
+            }
+        }
+     
+        .search{
+            width: 80%;
+
+            .lupa{
+                position: absolute;
+                left: 10px;
+                top:10px;
+                fa-icon{
+                    font-size: 30px;
+                    cursor: pointer;
+                   
+                 }
+                
+            }
+            input{
+                width: 100%;
+                min-height: 50px;
+                padding-left: 50px;
+            }
+        }
+    }
+
+
+ 
+    nav{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    li{
+        padding: 20px;
+        list-style-type: none;
+        border-top: 1px solid white;
+    }
+    a{
+        font-size: 50px;
+        text-decoration: none;
+        margin-left: 80px;
+        color:white;
+    }
+}
+    
